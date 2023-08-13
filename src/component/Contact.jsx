@@ -11,8 +11,7 @@ const Contact = () => {
             <textarea rows="50" placeholder='Enter your message' id='message'/>
         <button className='formbtn'>Send</button>
         </form>
-    </div>
-    
+    </div> 
     </section>
   )
 }
