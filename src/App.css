@@ -43,12 +43,14 @@ body{
 /*sidebar */
 .sidebar{
   position: fixed;
+  left: 0%;
   top: 80px;
   width: 16%;
   height: 100%;
   overflow-y: auto;
   color: white;
   background-color: #000000;
+  transition: left 0.5s ease-in-out;
 }
 .innersidebar{
   background-color: #161414;
@@ -76,6 +78,10 @@ body{
   margin: auto 0 auto 15px;
 
 }
+.ham{
+  transform: none;
+  transition: transform 0.5s;
+}
 .designUpper{
   background-color: green;
   width: 100%;
@@ -101,15 +107,17 @@ body{
   align-items: center;
   justify-content: center;
   margin: 0 50px 0 0;
-  margin-left: auto;
 }
 
 /* Home css */
 #Home{
   margin-top: 125px;
   color: aliceblue;
-  height: 50vh;
   display: flex;
+}
+#HomeImage{
+  width: 500PX;
+  height: 200px;
 }
 #Home .HomeText h1{
    margin: 50px 10px 0px 0px
@@ -117,14 +125,12 @@ body{
 #Home .HomeText p{
   margin: 30px 10px 0px 0px
 }
-#Home .HomeImage{
-  margin: 80px 300px 20px 80px;
- 
-}
+
 .HomeImage img{
   border-radius: 550px;
+  min-width: 200px;
   height: 200px;
-  width: 200px;
+  
 }
 
 /* Skills */
@@ -142,12 +148,19 @@ body{
   color: white;
   margin: 20px;
   height: 250px;
-  min-width: 250px;
+  min-width: 300px;
   padding: 20px;
   border-radius: 20px;
 }
+.sidebar-item{
+ transform: none;
+ transition: transform 0.3s;
 
-
+}
+.sidebar-item :hover{
+  background-color: aliceblue;
+  transform: translateY(5px)
+}
 
 /* projects */
 #ProjectSection{
