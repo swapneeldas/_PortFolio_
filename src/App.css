@@ -114,6 +114,7 @@ body{
   margin-top: 125px;
   color: aliceblue;
   display: flex;
+  min-height: 40vh;
 }
 #HomeImage{
   width: 500PX;
@@ -147,21 +148,27 @@ body{
   background-color: black;
   color: white;
   margin: 20px;
-  height: 250px;
-  min-width: 300px;
+  height: 225px;
+  min-width: 225px;
   padding: 20px;
   border-radius: 20px;
+  box-shadow: -2px 1px 10px 1px #876262;
 }
 .sidebar-item{
  transform: none;
- transition: transform 0.3s;
+ bottom: 0;
+ /* transition: all 1s; */
+ transition: color 1s;
 
 }
 .sidebar-item :hover{
-  background-color: aliceblue;
-  transform: translateY(5px)
+  /* background-color: aliceblue; */
+  position: relative;
+  bottom: 5px;
+  /* color: rgb(233, 196, 202); */
+  /* transform: scale(1.1); */
+  /* font-size: 20px; */
 }
-
 /* projects */
 #ProjectSection{
   margin: 50px 0 0 0;

@@ -7,7 +7,7 @@ let projects=[{Name:"Typing App",img:""},{Name:"Simon Game",img:""},{Name:`Calcu
 const Project = () => {
   return (
     <section id='ProjectSection'>
-    <h1 className='text-3xl font-bold text-white mt-14 mb-8 mx-3'>project</h1> 
+    <h1 className='text-2xl font-bold text-white mt-14 mb-8 mx-3'>project</h1> 
     <div className='Skills max-xl:flex max-xl:overflow-y-auto max-xl:flex-nowrap'>
     {projects.map((item)=>{
       return(

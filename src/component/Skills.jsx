@@ -52,7 +52,7 @@ const Skills = () => {
 
   return (
     <section id='skillSection'>
-    <h1 className="text-3xl font-bold text-white mt-14 mb-8 mx-3">Frontend</h1>
+    <h1 className="text-2xl font-bold text-white mt-14 mb-8 mx-3">Frontend</h1>
     <div className='Skills max-xl:flex max-xl:overflow-y-auto max-xl:flex-nowrap'>
     {Frontendskills.map((item)=>{
       return(
@@ -63,7 +63,7 @@ const Skills = () => {
     })
     }
     </div>
-    <h1 className="text-3xl font-bold text-white mt-14 mb-8 mx-3">Backend</h1>
+    <h1 className="text-2xl font-bold text-white mt-14 mb-8 mx-3">Backend</h1>
     <div className='Skills max-xl:flex max-xl:overflow-y-auto max-xl:flex-nowrap'>
     {Backendskills.map((item)=>{
       return(
@@ -74,7 +74,7 @@ const Skills = () => {
     })
     }
     </div>
-    <h1 className="text-3xl font-bold text-white mt-14 mb-8 mx-3">Tolls</h1>
+    <h1 className="text-2xl font-bold text-white mt-14 mb-8 mx-3">Tolls</h1>
     <div className='Skills max-xl:flex max-xl:overflow-y-auto max-xl:flex-nowrap'>
     {devtolls.map((item)=>{
       return(
