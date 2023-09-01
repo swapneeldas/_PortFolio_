@@ -108,7 +108,22 @@ body{
   justify-content: center;
   margin: 0 50px 0 0;
 }
-
+.bef{
+  position: relative;
+}
+.bef::before{
+content: "";
+position: absolute;
+bottom: 10px;
+background-color: green;
+height:5px;
+border-radius: 99999px;
+width:0%;
+transition: width 0.3s ease;
+}
+.bef:hover:before{
+  width: 100%;
+}
 /* Home css */
 #Home{
   margin-top: 125px;
@@ -117,6 +132,7 @@ body{
   min-height: 40vh;
 }
 #HomeImage{
+  
   width: 500PX;
   height: 200px;
 }
@@ -129,6 +145,7 @@ body{
 
 .HomeImage img{
   border-radius: 550px;
+  /* mix-blend-mode: multiply; */
   min-width: 200px;
   height: 200px;
   
@@ -186,36 +203,5 @@ body{
   width: 150px;
   padding: 20px;
   border-radius: 20px;
-}
-/* Contact form */
-.ContactForm{
- 
-  display: flex;
-  flex-direction: column;
-  margin: 30px 0 0 0;
-  width: 50% ;
-}
-.ContactForm input,.ContactForm textarea{
-  height: 40px;
-  border-radius: 10px;
-  padding: 5px;
-  margin: 5px;
-  background-color: transparent;
-  color: aliceblue;
-  border: 2px solid white;
-}
-::placeholder{
-  color: rgb(224, 187, 187);
-  font-size: 15px;
-  font-weight: 500;
-}
-.formbtn{
-  width: 4rem;
-  margin: 10px 5px 5px auto;
-  border-radius: 10px;
-  background-color: blue;
-  font-weight: 700;
-  padding: 10px;
-  font-size: 1rem;
 
 }

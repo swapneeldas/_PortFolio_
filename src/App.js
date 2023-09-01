@@ -1,27 +1,39 @@
 import './App.css';
-import './input.css'
-import Navbar from './component/navbar';
-import Home from './component/Home';
-import Skills from './component/Skills';
-import Project from './component/project';
-import Contact from './component/Contact';
-import Sidebar from './component/sidebar';
+import './input.css';
+import './Contacts.css';
 import State from './context/state';
-
+import Mainpage from './component/mainpage/Mainpage';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Contact from './component/mainpage/Contact';
+import Navbar from './component/navbar';
 function App() {
   return (
+    <Router>
     <State>
+    <Navbar/>
     <div className="App">
-      <Navbar/>
+    <Routes>
+      <Route exact path='/' element={<Mainpage/>}/>
+      <Route exact path='/Contact' element={<Contact/>}/>
+
+    
+   
+      {/* <Navbar/>
       <Sidebar/>
       <div className='AppInnerItems max-2xl:w-11/12'>
       <Home/>
       <Skills/>
       <Project/>
       <Contact/>
-      </div>
+      </div> */}
+      </Routes>
     </div>
     </State>
+    </Router>
   );
 }
 
